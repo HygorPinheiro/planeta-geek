@@ -1,5 +1,7 @@
 package model;
+
 //Aqui falta o import do util do método de conversão de valores.
+import utils.Utils;
 
 public class Produto {
     private static int count = 1; // Aqui cada produto terá um ID começando de 1.
@@ -44,5 +46,12 @@ public class Produto {
                 "\nNome: " + this.getNome() +
                 "\nPreço: " + this.getPreco();
     }
+
+    // public String toString() {
+    // double precoDouble = Double.parseDouble(this.getPreco());
+    // return "Id: " + this.getId() +
+    // "\nNome: " + this.getNome() +
+    // "\nPreço: " + Utils.doubleToString(precoDouble);
+    // }
 
 }
