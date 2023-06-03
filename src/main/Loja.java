@@ -105,4 +105,10 @@ public class Loja {
         }
         menu();
     }
+
+    // Implementação de comprar produtos
+
+    private static void comprarProdutos() {
+
+    }
 }
