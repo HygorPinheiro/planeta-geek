@@ -70,9 +70,19 @@ public class Loja {
     
         // Indicando que o produto foi cadastrado
         System.out.println(produto.getNome() + " cadastrado com sucesso!");
-        menu();
-    }
     
+        System.out.println("Deseja cadastrar mais itens? Digite 1 para sim e 0 para sair");
+        int option = input.nextInt();
+    
+        if (option == 1) {
+            cadastrarProdutos();
+        } else if (option == 0) {
+            menu();
+        } else {
+            System.out.println("Opção inválida!");
+            cadastrarProdutos();
+        }
+    }    
 
     private static void listarProdutos() {
         // aqui temos um FOR para Produto passand "p" como referência para cada
