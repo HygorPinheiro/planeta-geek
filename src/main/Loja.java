@@ -58,21 +58,21 @@ public class Loja {
 
     private static void cadastrarProdutos() {
         // Recebendo as informações de entrada do produto
-
         System.out.println("Nome do produto: ");
         String nome = input.next();        
         System.out.println("Preço do produto: ");
         Double preco = input.nextDouble();
-
-
-        Produto produto = new Produto(nome, preco);
+        System.out.println("Quantidade do produto: ");
+        int quantidade = input.nextInt();
+    
+        Produto produto = new Produto(nome, preco, quantidade);
         produtos.add(produto);
-
-        // Dizendo que o produto foi cadastrado
-
+    
+        // Indicando que o produto foi cadastrado
         System.out.println(produto.getNome() + " cadastrado com sucesso!");
         menu();
     }
+    
 
     private static void listarProdutos() {
         // aqui temos um FOR para Produto passand "p" como referência para cada
