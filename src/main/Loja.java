@@ -61,7 +61,7 @@ public class Loja {
         System.out.println("Nome do produto: ");
         String nome = input.next();        
         System.out.println("Preço do produto: ");
-        Double preco = input.nextDouble();
+        double preco = input.nextDouble();
         System.out.println("Quantidade do produto: ");
         int quantidade = input.nextInt();
     

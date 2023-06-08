@@ -5,13 +5,14 @@ public class Produto {
 
     private int id;
     private String nome;
-    private Double preco;
+    private double preco;
     private int quantidade;
 
-    public Produto(String nome, Double preco, int quantidade) {
+   
+    public Produto(String nome, double preco2, int quantidade) {
         this.id = count;
         this.nome = nome;
-        this.preco = preco;
+        this.preco = preco2;
         this.quantidade = quantidade;
         Produto.count += 1; // Cada produto terá uma contagem de ID começando de 1.
     }
@@ -30,11 +31,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
